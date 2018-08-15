@@ -17,6 +17,6 @@ spec:
         runAsUser: 1001520010
       containers:
       - name: monitoring-demo
-        image: "stakater/stakaterjavamonitoringdemoapp"
+        image: "stakater/stakaterjavamonitoringdemolkjsdfapp"
         ports:
         - containerPort: 8080
