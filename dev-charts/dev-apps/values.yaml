@@ -1,0 +1,12 @@
+xposer:
+  xposer:
+    configFilePath: /configs/config.yaml
+    watchGlobally: false
+    exposeServiceURL: globally
+    config:
+      domain: stakater.com
+      ingressURLTemplate: "{{.Service}}.{{.Namespace}}.{{.Domain}}"
+      ingressURLPath: /
+      ingressNameTemplate: "{{.Service}}"
+      tls: false
+    tolerations: {}

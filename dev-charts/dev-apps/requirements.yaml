@@ -1,0 +1,5 @@
+dependencies:
+- name: xposer
+  version: 0.0.15
+  repository: https://stakater.github.io/stakater-charts 
+  alias: xposer
