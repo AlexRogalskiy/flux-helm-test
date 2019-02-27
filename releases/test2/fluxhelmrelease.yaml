@@ -3,7 +3,7 @@ apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: dev-apps
-  namespace: test2
+  namespace: demo
   labels:
     chart: dev-apps
 spec:
