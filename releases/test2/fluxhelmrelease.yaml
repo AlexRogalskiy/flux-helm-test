@@ -1,5 +1,6 @@
-apiVersion: helm.integrations.flux.weave.works/v1alpha2
-kind: FluxHelmRelease
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
 metadata:
   name: dev-apps
   namespace: test2
@@ -8,6 +9,10 @@ metadata:
 spec:
   chartGitPath: dev-apps
   releaseName: flux-dev-apps
+  chart:
+    git: ssh://git@github.com/stakater/flux-helm-test.git
+    path: charts/dev-apps
+    ref: master
   values:
     xposer:
       xposer:
